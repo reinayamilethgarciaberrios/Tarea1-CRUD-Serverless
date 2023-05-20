@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "562de425-9b9f-4cfe-8975-d7ba1d079134",
+		"name": "Serverless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26435004"
+	},
+	"item": [
+		{
+			"name": "NuevoTelefono",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Google\",\r\n  \"modelo\": \"Pixel 6\",\r\n  \"sistema_operativo\": \"Android\",\r\n  \"pantalla\": \"6.4 pulgadas\",\r\n  \"resolucion_pantalla\": \"2400 x 1080 píxeles\",\r\n  \"procesador\": \"Google Tensor\",\r\n  \"memoria_ram\": \"8 GB\",\r\n  \"almacenamiento_interno\": \"128 GB\",\r\n  \"camara_trasera\": \"50 MP + 12 MP\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ssduq0go0l.execute-api.us-east-1.amazonaws.com/telefono",
+					"protocol": "https",
+					"host": [
+						"ssduq0go0l",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"telefono"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTelefonos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ssduq0go0l.execute-api.us-east-1.amazonaws.com/telefonos",
+					"protocol": "https",
+					"host": [
+						"ssduq0go0l",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"telefonos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarTelefono",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"baf8ede5-43d0-4a4b-9987-f0e062d511cf\",\r\n    \"modelo\" : \"Pixel 6\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ssduq0go0l.execute-api.us-east-1.amazonaws.com/actualizarTelefonoId",
+					"protocol": "https",
+					"host": [
+						"ssduq0go0l",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"actualizarTelefonoId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarTelefono",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"a75a4bdc-74ed-46a9-b95b-644c68e94946\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ssduq0go0l.execute-api.us-east-1.amazonaws.com/eliminarTelefonoId",
+					"protocol": "https",
+					"host": [
+						"ssduq0go0l",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"eliminarTelefonoId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTelefonoId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"baf8ede5-43d0-4a4b-9987-f0e062d511cf\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ssduq0go0l.execute-api.us-east-1.amazonaws.com/telefonoId",
+					"protocol": "https",
+					"host": [
+						"ssduq0go0l",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"telefonoId"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
